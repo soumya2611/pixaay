@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* Responsive grid */
+  gap: 20px;
+  /* Space between images */
+  padding: 20px;
+}
+
+/* Styling for each item */
+.items {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Shadow for a card-like effect */
+  transition: transform 0.3s ease;
+}
+
+.items:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+}
+
+.items img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: transform 0.5s ease;
+}

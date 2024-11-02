@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows buttons to wrap to the next line if needed */
+    justify-content: center;
+    gap: 10px;
+    /* Adds a gap between buttons */
+    padding: 10px;
+}
+
+.btn {
+    margin: 5px;
+    /* Adds some spacing around each button */
+}
+
+* Styling for the input field */ .container input.form-control {
+    max-width: 300px;
+    /* Sets max width for the input field */
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    /* Outline color */
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.container input.form-control:focus {
+    border-color: #007bff;
+    /* Darker border on focus */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    /* Adds a subtle glow */
+}
